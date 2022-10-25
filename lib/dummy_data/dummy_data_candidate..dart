@@ -1,4 +1,4 @@
-import 'candidate.dart';
+import '../models/candidate.dart';
 
 List<Candidate> alliance = [
   Candidate(

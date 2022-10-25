@@ -1,5 +1,6 @@
-import 'package:election_flutter/candidate.dart';
-import 'package:election_flutter/dummy_data.dart';
+import 'package:election_flutter/models/candidate.dart';
+import 'package:election_flutter/dummy_data/dummy_data_candidate..dart';
+import 'package:election_flutter/party_list_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(),
+      home: PartyListPage(),
     );
   }
 }
