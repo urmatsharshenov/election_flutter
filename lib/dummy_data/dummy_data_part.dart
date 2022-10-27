@@ -19,8 +19,6 @@ List<Party> partyList = [
     number: 3,
     titleKyrgyz: '«АЛЬЯНС» саясий партиясы',
     titleRussian: 'Политическая партия «АЛЬЯНС»',
-    image:
-        'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/%D0%9B%D0%BE%D0%B3%D0%BE_%D0%BF%D0%B0%D1%80%D1%82%D0%B8%D0%B8_%D0%90%D1%82%D0%B0-%D0%9C%D0%B5%D0%BA%D0%B5%D0%BD.svg/512px-%D0%9B%D0%BE%D0%B3%D0%BE_%D0%BF%D0%B0%D1%80%D1%82%D0%B8%D0%B8_%D0%90%D1%82%D0%B0-%D0%9C%D0%B5%D0%BA%D0%B5%D0%BD.svg.png',
   ),
   Party(
     number: 4,
@@ -47,8 +45,6 @@ List<Party> partyList = [
     number: 7,
     titleKyrgyz: '«БАГЫТ» саясий партиясы',
     titleRussian: 'Политическая партия «БАГЫТ»',
-    image:
-        'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/%D0%9B%D0%BE%D0%B3%D0%BE_%D0%BF%D0%B0%D1%80%D1%82%D0%B8%D0%B8_%D0%90%D1%82%D0%B0-%D0%9C%D0%B5%D0%BA%D0%B5%D0%BD.svg/512px-%D0%9B%D0%BE%D0%B3%D0%BE_%D0%BF%D0%B0%D1%80%D1%82%D0%B8%D0%B8_%D0%90%D1%82%D0%B0-%D0%9C%D0%B5%D0%BA%D0%B5%D0%BD.svg.png',
   ),
   Party(
     number: 8,
@@ -68,15 +64,11 @@ List<Party> partyList = [
     number: 10,
     titleKyrgyz: '«АЗАТТЫК» саясий партиясы',
     titleRussian: 'Политическая партия «АЗАТТЫК»',
-    image:
-        'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/%D0%9B%D0%BE%D0%B3%D0%BE_%D0%BF%D0%B0%D1%80%D1%82%D0%B8%D0%B8_%D0%90%D1%82%D0%B0-%D0%9C%D0%B5%D0%BA%D0%B5%D0%BD.svg/512px-%D0%9B%D0%BE%D0%B3%D0%BE_%D0%BF%D0%B0%D1%80%D1%82%D0%B8%D0%B8_%D0%90%D1%82%D0%B0-%D0%9C%D0%B5%D0%BA%D0%B5%D0%BD.svg.png',
   ),
   Party(
     number: 11,
     titleKyrgyz: '«МЕКЕНЧИЛ ЭЛ» саясий партиясы',
     titleRussian: 'Политическая партия «МЕКЕНЧИЛ ЭЛ»',
-    image:
-        'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/%D0%9B%D0%BE%D0%B3%D0%BE_%D0%BF%D0%B0%D1%80%D1%82%D0%B8%D0%B8_%D0%90%D1%82%D0%B0-%D0%9C%D0%B5%D0%BA%D0%B5%D0%BD.svg/512px-%D0%9B%D0%BE%D0%B3%D0%BE_%D0%BF%D0%B0%D1%80%D1%82%D0%B8%D0%B8_%D0%90%D1%82%D0%B0-%D0%9C%D0%B5%D0%BA%D0%B5%D0%BD.svg.png',
   ),
   Party(
     number: 12,
@@ -102,56 +94,50 @@ List<Party> partyList = [
     number: 15,
     titleKyrgyz: '«АРУУЗАТ-ЭЛ КУТУ» саясий партиясы',
     titleRussian: 'Политическая партия «АРУУЗАТ-ЭЛ КУТУ»',
-    image:
-        'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/%D0%9B%D0%BE%D0%B3%D0%BE_%D0%BF%D0%B0%D1%80%D1%82%D0%B8%D0%B8_%D0%90%D1%82%D0%B0-%D0%9C%D0%B5%D0%BA%D0%B5%D0%BD.svg/512px-%D0%9B%D0%BE%D0%B3%D0%BE_%D0%BF%D0%B0%D1%80%D1%82%D0%B8%D0%B8_%D0%90%D1%82%D0%B0-%D0%9C%D0%B5%D0%BA%D0%B5%D0%BD.svg.png',
   ),
   Party(
     number: 16,
     titleKyrgyz: '«ПАТРИОТИЧЕСКАЯ ПАРТИЯ ЕДИНЕНИЯ КЫРГЫЗСТАНА»',
     titleRussian: '«ПАТРИОТИЧЕСКАЯ ПАРТИЯ ЕДИНЕНИЯ КЫРГЫЗСТАНА»',
-    image:
-        'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/%D0%9B%D0%BE%D0%B3%D0%BE_%D0%BF%D0%B0%D1%80%D1%82%D0%B8%D0%B8_%D0%90%D1%82%D0%B0-%D0%9C%D0%B5%D0%BA%D0%B5%D0%BD.svg/512px-%D0%9B%D0%BE%D0%B3%D0%BE_%D0%BF%D0%B0%D1%80%D1%82%D0%B8%D0%B8_%D0%90%D1%82%D0%B0-%D0%9C%D0%B5%D0%BA%D0%B5%D0%BD.svg.png',
   ),
   Party(
     number: 17,
     titleKyrgyz: '«УЛУТТАР БИРИМДИГИ» саясий партиясы',
     titleRussian: 'Политическая партия «УЛУТТАР БИРИМДИГИ»',
-    image:
-        'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/%D0%9B%D0%BE%D0%B3%D0%BE_%D0%BF%D0%B0%D1%80%D1%82%D0%B8%D0%B8_%D0%90%D1%82%D0%B0-%D0%9C%D0%B5%D0%BA%D0%B5%D0%BD.svg/512px-%D0%9B%D0%BE%D0%B3%D0%BE_%D0%BF%D0%B0%D1%80%D1%82%D0%B8%D0%B8_%D0%90%D1%82%D0%B0-%D0%9C%D0%B5%D0%BA%D0%B5%D0%BD.svg.png',
+    image: 'https://st-1.akipress.org/st_dolbor/elections/parlament21/ub.jpg',
   ),
   Party(
     number: 18,
     titleKyrgyz: '«ЭЛ ҮМҮТҮ» саясий партиясы',
     titleRussian: 'Политическая партия «ЭЛ ҮМҮТҮ»',
     image:
-        'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/%D0%9B%D0%BE%D0%B3%D0%BE_%D0%BF%D0%B0%D1%80%D1%82%D0%B8%D0%B8_%D0%90%D1%82%D0%B0-%D0%9C%D0%B5%D0%BA%D0%B5%D0%BD.svg/512px-%D0%9B%D0%BE%D0%B3%D0%BE_%D0%BF%D0%B0%D1%80%D1%82%D0%B8%D0%B8_%D0%90%D1%82%D0%B0-%D0%9C%D0%B5%D0%BA%D0%B5%D0%BD.svg.png',
+        'https://st-1.akipress.org/st_gallery/30/1268030.e85e939ade97f96c7dfc5c75cfb1ac8a.jpg',
   ),
   Party(
     number: 19,
     titleKyrgyz: '«ОРДО» саясий партиясы',
     titleRussian: 'Политическая партия «ОРДО»',
     image:
-        'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/%D0%9B%D0%BE%D0%B3%D0%BE_%D0%BF%D0%B0%D1%80%D1%82%D0%B8%D0%B8_%D0%90%D1%82%D0%B0-%D0%9C%D0%B5%D0%BA%D0%B5%D0%BD.svg/512px-%D0%9B%D0%BE%D0%B3%D0%BE_%D0%BF%D0%B0%D1%80%D1%82%D0%B8%D0%B8_%D0%90%D1%82%D0%B0-%D0%9C%D0%B5%D0%BA%D0%B5%D0%BD.svg.png',
+        'https://media-center.kg/uploads/news/images/1613144751.1737733663.jpeg',
   ),
   Party(
     number: 20,
     titleKyrgyz: '«УЛУУ-ЖУРТ» саясий партиясы',
     titleRussian: 'Политическая партия «УЛУУ-ЖУРТ»',
     image:
-        'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/%D0%9B%D0%BE%D0%B3%D0%BE_%D0%BF%D0%B0%D1%80%D1%82%D0%B8%D0%B8_%D0%90%D1%82%D0%B0-%D0%9C%D0%B5%D0%BA%D0%B5%D0%BD.svg/512px-%D0%9B%D0%BE%D0%B3%D0%BE_%D0%BF%D0%B0%D1%80%D1%82%D0%B8%D0%B8_%D0%90%D1%82%D0%B0-%D0%9C%D0%B5%D0%BA%D0%B5%D0%BD.svg.png',
+        'https://talapker.shailoo.gov.kg/media/kenesh_gor_party/%D0%BB%D0%BE%D0%B3%D0%BE_%D1%83%D1%83%D0%BB%D1%83.jpg',
   ),
   Party(
     number: 21,
     titleKyrgyz: '«АТА-ЖУРТ КЫРГЫЗСТАН» саясий партиясы',
     titleRussian: 'Политическая партия «АТА-ЖУРТ КЫРГЫЗСТАН»',
     image:
-        'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/%D0%9B%D0%BE%D0%B3%D0%BE_%D0%BF%D0%B0%D1%80%D1%82%D0%B8%D0%B8_%D0%90%D1%82%D0%B0-%D0%9C%D0%B5%D0%BA%D0%B5%D0%BD.svg/512px-%D0%9B%D0%BE%D0%B3%D0%BE_%D0%BF%D0%B0%D1%80%D1%82%D0%B8%D0%B8_%D0%90%D1%82%D0%B0-%D0%9C%D0%B5%D0%BA%D0%B5%D0%BD.svg.png',
+        'https://upload.wikimedia.org/wikipedia/commons/b/bb/Ata-Jurt_Kyrgyzstan_party_logo.png',
   ),
   Party(
     number: 22,
     titleKyrgyz: 'Баарына каршы',
     titleRussian: 'Против всех',
-    image:
-        'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/%D0%9B%D0%BE%D0%B3%D0%BE_%D0%BF%D0%B0%D1%80%D1%82%D0%B8%D0%B8_%D0%90%D1%82%D0%B0-%D0%9C%D0%B5%D0%BA%D0%B5%D0%BD.svg/512px-%D0%9B%D0%BE%D0%B3%D0%BE_%D0%BF%D0%B0%D1%80%D1%82%D0%B8%D0%B8_%D0%90%D1%82%D0%B0-%D0%9C%D0%B5%D0%BA%D0%B5%D0%BD.svg.png',
+    image: 'https://dilogrenme.com/assets/img/uploads/cancel.png',
   ),
 ];

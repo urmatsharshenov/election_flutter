@@ -1,5 +1,8 @@
 import 'package:election_flutter/party/party_list.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'bloc/party_bloc.dart';
+import 'bloc/party_event.dart';
 
 class PartyListPage extends StatefulWidget {
   const PartyListPage({super.key});
@@ -10,12 +13,25 @@ class PartyListPage extends StatefulWidget {
 
 class _PartyListPageState extends State<PartyListPage> {
   @override
+  void initState() {
+    context.read<PartyBloc>().add(FetchPartyListEvent());
+
+    super.initState();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text('Партиялар тизмеги'),
       ),
-      body: PartyList(),
+      body: BlocProvider.value(
+        value: BlocProvider.of<PartyBloc>(context),
+        child: BlocProvider.value(
+          value: BlocProvider.of<PartyBloc>(context),
+          child: PartyList(),
+        ),
+      ),
     );
   }
 }
