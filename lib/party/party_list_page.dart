@@ -21,6 +21,8 @@ class _PartyListPageState extends State<PartyListPage> {
 
   @override
   Widget build(BuildContext context) {
+    context.read<PartyBloc>().add(FetchPartyListEvent());
+
     return Scaffold(
       appBar: AppBar(
         title: Text('Партиялар тизмеги'),

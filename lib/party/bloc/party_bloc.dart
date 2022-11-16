@@ -22,13 +22,49 @@ class PartyBloc extends Bloc<PartyEvent, PartyState> {
       transformer: droppable(),
     );
 
-    on<SelectPartyEvent>((event, emit) async {
-      emit(state.cloneWith(
-        loading: true,
-      ));
+    on<SelectPartyEvent>(
+      (event, emit) async {
+        emit(state.cloneWith(
+          loading: true,
+        ));
 
-      emit(await selectParty(event.partyIndex));
-    }, transformer: droppable());
+        emit(await selectParty(event.partyIndex));
+      },
+      transformer: droppable(),
+    );
+
+    on<SelectCandidateEvent>(
+      (event, emit) async {
+        emit(state.cloneWith(
+          loading: true,
+        ));
+
+        emit(await selectCandidate(event.candidateIndex));
+      },
+      transformer: droppable(),
+    );
+
+    on<SelectCandidateNameEvent>(
+      (event, emit) async {
+        emit(state.cloneWith(
+          loading: true,
+        ));
+
+        emit(await selectCandidateName(event.name));
+      },
+      transformer: droppable(),
+    );
+
+    on<SelectPartyNameEvent>(
+      (event, emit) async {
+        emit(state.cloneWith(
+          loading: true,
+        ));
+
+        emit(await selectPartyName(event.name));
+      },
+      transformer: droppable(),
+    );
   }
 
   Future<PartyState> _fetchPartyList() async {
@@ -53,6 +89,54 @@ class PartyBloc extends Bloc<PartyEvent, PartyState> {
     try {
       return state.cloneWith(
         selectedPartyIndex: partyIndex,
+        loading: false,
+      );
+    } catch (err) {
+      print(err);
+      return state.cloneWith(
+        loading: false,
+      );
+    }
+  }
+
+  Future<PartyState> selectCandidate(int candidateIndex) async {
+    // await Duration(seconds: 5);
+
+    try {
+      return state.cloneWith(
+        selectedCandidateIndex: candidateIndex,
+        loading: false,
+      );
+    } catch (err) {
+      print(err);
+      return state.cloneWith(
+        loading: false,
+      );
+    }
+  }
+
+  Future<PartyState> selectCandidateName(String name) async {
+    // await Duration(seconds: 5);
+
+    try {
+      return state.cloneWith(
+        candidateName: name,
+        loading: false,
+      );
+    } catch (err) {
+      print(err);
+      return state.cloneWith(
+        loading: false,
+      );
+    }
+  }
+
+  Future<PartyState> selectPartyName(String name) async {
+    // await Duration(seconds: 5);
+
+    try {
+      return state.cloneWith(
+        partyName: name,
         loading: false,
       );
     } catch (err) {
