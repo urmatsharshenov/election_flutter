@@ -4,7 +4,8 @@ class FetchPartyListEvent extends PartyEvent {}
 
 class SelectPartyEvent extends PartyEvent {
   int partyIndex;
-  SelectPartyEvent({required this.partyIndex});
+  String partyID;
+  SelectPartyEvent({required this.partyIndex, required this.partyID});
 }
 
 class SelectPartyNameEvent extends PartyEvent {

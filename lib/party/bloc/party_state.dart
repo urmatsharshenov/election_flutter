@@ -7,6 +7,7 @@ class PartyState {
   int? selectedCandidateIndex;
   bool? loading;
   String? candidateName;
+  String? selectedPartyID;
   String? partyName;
 
   PartyState({
@@ -16,6 +17,7 @@ class PartyState {
     this.loading = false,
     this.candidateName,
     this.partyName,
+    this.selectedPartyID,
   });
 
   PartyState cloneWith({
@@ -23,6 +25,7 @@ class PartyState {
     int? selectedPartyIndex,
     String? candidateName,
     String? partyName,
+    String? selectedPartyID,
     int? selectedCandidateIndex,
     bool? loading,
   }) =>
@@ -34,5 +37,6 @@ class PartyState {
         loading: loading ?? this.loading,
         candidateName: candidateName ?? this.candidateName,
         partyName: partyName ?? this.partyName,
+        selectedPartyID: selectedPartyID ?? this.selectedPartyID,
       );
 }

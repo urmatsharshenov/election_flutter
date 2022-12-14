@@ -118,8 +118,8 @@ class _ResultPageState extends State<ResultPage> {
                                 content: const Text('Спасибо за участие'),
                               );
 
-                              // Find the ScaffoldMessenger in the widget tree
-                              // and use it to show a SnackBar.
+                              print(state.selectedPartyID);
+
                               ScaffoldMessenger.of(context)
                                   .showSnackBar(snackBar);
                             },

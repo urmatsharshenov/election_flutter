@@ -31,7 +31,7 @@ class PartyBloc extends Bloc<PartyEvent, PartyState> {
           loading: true,
         ));
 
-        emit(await selectParty(event.partyIndex));
+        emit(await selectParty(event.partyIndex, event.partyID));
       },
       transformer: droppable(),
     );
@@ -130,10 +130,11 @@ class PartyBloc extends Bloc<PartyEvent, PartyState> {
     }
   }
 
-  Future<PartyState> selectParty(int partyIndex) async {
+  Future<PartyState> selectParty(int partyIndex, String partyID) async {
     try {
       return state.cloneWith(
         selectedPartyIndex: partyIndex,
+        selectedPartyID: partyID,
         loading: false,
       );
     } catch (err) {
