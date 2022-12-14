@@ -1,13 +1,9 @@
-import 'package:election_flutter/dummy_data/constants.dart';
-import 'package:election_flutter/dummy_data/dummy_data_part.dart';
 import 'package:election_flutter/models/party.dart';
-import 'package:election_flutter/party/candidate_page.dart';
 import 'package:election_flutter/party/party_card.dart';
+import 'package:election_flutter/party/comfirmation_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
 import 'bloc/party_bloc.dart';
-import 'bloc/party_event.dart';
 import 'bloc/party_state.dart';
 
 class PartyList extends StatefulWidget {
@@ -25,8 +21,6 @@ class _PartyListState extends State<PartyList> {
         bool isSelected = state.selectedPartyIndex != null;
 
         List party_list = state.party_list;
-
-        print(isSelected);
 
         return Container(
           child: Column(
@@ -66,10 +60,7 @@ class _PartyListState extends State<PartyList> {
                                             BlocProvider.value(
                                           value: BlocProvider.of<PartyBloc>(
                                               context),
-                                          child: CandidatteListPage(
-                                            number: state.selectedPartyIndex
-                                                .toString(),
-                                          ),
+                                          child: ConfirmationPage(),
                                         ),
                                       ),
                                     );
