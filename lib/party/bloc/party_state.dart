@@ -4,27 +4,30 @@ import 'package:election_flutter/models/party.dart';
 class PartyState {
   List party_list = [];
   int? selectedPartyIndex;
-  int? selectedCandidateIndex;
   bool? loading;
+  String? selectedPartyID;
+  String? partyName;
 
   PartyState({
     this.party_list = const [],
     this.selectedPartyIndex,
-    this.selectedCandidateIndex,
     this.loading = false,
+    this.partyName,
+    this.selectedPartyID,
   });
 
   PartyState cloneWith({
     List<Party>? party_list,
     int? selectedPartyIndex,
-    int? selectedCandidateIndex,
+    String? partyName,
+    String? selectedPartyID,
     bool? loading,
   }) =>
       PartyState(
         selectedPartyIndex: selectedPartyIndex ?? this.selectedPartyIndex,
-        selectedCandidateIndex:
-            selectedCandidateIndex ?? this.selectedCandidateIndex,
         party_list: party_list ?? this.party_list,
         loading: loading ?? this.loading,
+        partyName: partyName ?? this.partyName,
+        selectedPartyID: selectedPartyID ?? this.selectedPartyID,
       );
 }

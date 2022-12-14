@@ -1,12 +1,9 @@
-import 'package:election_flutter/dummy_data/constants.dart';
-import 'package:election_flutter/dummy_data/dummy_data_part.dart';
 import 'package:election_flutter/models/party.dart';
 import 'package:election_flutter/party/party_card.dart';
+import 'package:election_flutter/party/comfirmation_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
 import 'bloc/party_bloc.dart';
-import 'bloc/party_event.dart';
 import 'bloc/party_state.dart';
 
 class PartyList extends StatefulWidget {
@@ -21,7 +18,7 @@ class _PartyListState extends State<PartyList> {
   Widget build(BuildContext context) {
     return BlocBuilder<PartyBloc, PartyState>(
       builder: (context, state) {
-        bool isSelected = state.selectedCandidateIndex != null;
+        bool isSelected = state.selectedPartyIndex != null;
 
         List party_list = state.party_list;
 
@@ -42,7 +39,7 @@ class _PartyListState extends State<PartyList> {
                   },
                 ),
               ),
-              if (isSelected != true)
+              if (isSelected == true)
                 Container(
                   height: 55,
                   child: Padding(
@@ -56,10 +53,19 @@ class _PartyListState extends State<PartyList> {
                           child: ElevatedButton(
                             onPressed: state.selectedPartyIndex == null
                                 ? null
-                                : () {
-                                    print(state.selectedPartyIndex);
+                                : () async {
+                                    await Navigator.of(context).push(
+                                      MaterialPageRoute(
+                                        builder: (context) =>
+                                            BlocProvider.value(
+                                          value: BlocProvider.of<PartyBloc>(
+                                              context),
+                                          child: ConfirmationPage(),
+                                        ),
+                                      ),
+                                    );
                                   },
-                            child: const Text('Кийинки'),
+                            child: const Text('Следующий'),
                             style: ElevatedButton.styleFrom(
                               foregroundColor: Colors.white,
                               backgroundColor: Colors.green,
