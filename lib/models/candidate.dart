@@ -1,5 +1,6 @@
 class Candidate {
   final int number;
+  final String? id;
   final String firstname;
   final String lastname;
   final String? patronymic;
@@ -9,5 +10,6 @@ class Candidate {
     required this.firstname,
     required this.lastname,
     this.patronymic,
+    this.id,
   });
 }

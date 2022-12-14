@@ -1,5 +1,6 @@
 class Party {
   final int number;
+  final id;
   final String titleKyrgyz;
   final String titleRussian;
   final String? image;
@@ -9,5 +10,6 @@ class Party {
     required this.titleKyrgyz,
     required this.titleRussian,
     this.image,
+    this.id,
   });
 }

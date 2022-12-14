@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'bloc/party_bloc.dart';
+import 'bloc/party_event.dart';
 import 'bloc/party_state.dart';
 
 class ResultPage extends StatefulWidget {
@@ -105,6 +106,10 @@ class _ResultPageState extends State<ResultPage> {
                           width: 150,
                           child: ElevatedButton(
                             onPressed: () {
+                              context
+                                  .read<PartyBloc>()
+                                  .add(SendResultToServerEvent());
+
                               Navigator.of(context).pushReplacement(
                                   MaterialPageRoute(
                                       builder: (context) => RegisterPage()));

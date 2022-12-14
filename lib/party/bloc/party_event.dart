@@ -21,3 +21,5 @@ class SelectCandidateNameEvent extends PartyEvent {
   String name;
   SelectCandidateNameEvent({required this.name});
 }
+
+class SendResultToServerEvent extends PartyEvent {}
